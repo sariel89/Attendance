@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Attendance Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AttendanceController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="AttendanceController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -44,7 +44,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yuU-9j-oNo">
-                                <rect key="frame" x="16" y="76" width="288" height="424"/>
+                                <rect key="frame" x="0.0" y="76" width="320" height="424"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="fOh-Ml-vQT"/>
@@ -82,7 +82,7 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nyq-ks-C8m" secondAttribute="bottom" constant="20" id="0Nb-6L-PMA"/>
                             <constraint firstItem="0z3-Ec-c46" firstAttribute="top" secondItem="yuU-9j-oNo" secondAttribute="bottom" constant="8" id="QZy-bu-fAF"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0z3-Ec-c46" secondAttribute="bottom" constant="20" id="Wm1-Df-K3b"/>
-                            <constraint firstAttribute="trailing" secondItem="yuU-9j-oNo" secondAttribute="trailing" constant="16" id="YiQ-qI-cnn"/>
+                            <constraint firstAttribute="trailing" secondItem="yuU-9j-oNo" secondAttribute="trailing" id="YiQ-qI-cnn"/>
                             <constraint firstItem="0z3-Ec-c46" firstAttribute="width" secondItem="nyq-ks-C8m" secondAttribute="width" id="ZUP-aK-ni2"/>
                             <constraint firstItem="yuU-9j-oNo" firstAttribute="top" secondItem="Z3i-5x-3Rh" secondAttribute="bottom" constant="8" id="b65-n6-DZk"/>
                             <constraint firstItem="0z3-Ec-c46" firstAttribute="leading" secondItem="nyq-ks-C8m" secondAttribute="trailing" constant="12" id="dpP-Ev-jYu"/>
@@ -91,7 +91,7 @@
                             <constraint firstItem="0z3-Ec-c46" firstAttribute="leading" secondItem="nyq-ks-C8m" secondAttribute="trailing" constant="12" id="k8M-gk-MY8"/>
                             <constraint firstItem="gQn-Rw-NN6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="nJP-y5-1TS"/>
                             <constraint firstItem="gQn-Rw-NN6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="qss-wH-s8h"/>
-                            <constraint firstItem="yuU-9j-oNo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="sgJ-gC-AqB"/>
+                            <constraint firstItem="yuU-9j-oNo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sgJ-gC-AqB"/>
                             <constraint firstAttribute="trailing" secondItem="0z3-Ec-c46" secondAttribute="trailing" constant="16" id="uLL-wm-lRU"/>
                             <constraint firstItem="Z3i-5x-3Rh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="yKT-3e-90Q"/>
                         </constraints>
@@ -106,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-76.875" y="138.38028169014083"/>
+            <point key="canvasLocation" x="-429.375" y="163.73239436619718"/>
         </scene>
     </scenes>
 </document>

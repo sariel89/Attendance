@@ -19,14 +19,78 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Attendance/AppDelegate.m"
-            timestampString = "501240818.289753"
+            filePath = "Attendance/Classes/Controller/AttendanceController.m"
+            timestampString = "502005593.213475"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "-application:didFinishLaunchingWithOptions:"
+            startingLineNumber = "297"
+            endingLineNumber = "297"
+            landmarkName = "-createUserRecordListWithOneRecord:"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Attendance/Classes/Controller/AttendanceController.m"
+            timestampString = "502005593.213475"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "314"
+            endingLineNumber = "314"
+            landmarkName = "-analyzeDailyRecords:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Attendance/Classes/Controller/AttendanceController.m"
+            timestampString = "502005593.213475"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
+            landmarkName = "-beginReadFileAndHandle:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[AttendanceController beginReadFileAndHandle:]"
+                  moduleName = "Attendance"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/HDD/WorkSpace/Objective-C/GitHub/Attendance/Attendance/Classes/Controller/AttendanceController.m"
+                  timestampString = "502005893.997597"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "1175">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[AttendanceController beginReadFileAndHandle:]"
+                  moduleName = "Attendance"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/HDD/WorkSpace/Objective-C/GitHub/Attendance/Attendance/Classes/Controller/AttendanceController.m"
+                  timestampString = "502005894.000346"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "1211">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

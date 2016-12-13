@@ -8,8 +8,16 @@
 
 #import "AttendanceModel.h"
 
-@implementation AttendanceModel
+@implementation AttendanceUnusuallyModel
+@end
 
+@implementation AttendanceModel
+- (NSMutableArray<AttendanceUnusuallyModel *> *)arrUnusually {
+    if (!_arrUnusually) {
+        _arrUnusually = [[NSMutableArray alloc] init];
+    }
+    return _arrUnusually;
+}
 @end
 
 @implementation AttendanceUserModel

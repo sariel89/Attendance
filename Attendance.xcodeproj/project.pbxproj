@@ -10,7 +10,6 @@
 		193346AC1DCE0C8500671C87 /* AttendanceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 193346AB1DCE0C8500671C87 /* AttendanceModel.m */; };
 		19BA6C131DCDCB6E00841DB1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BA6C121DCDCB6E00841DB1 /* main.m */; };
 		19BA6C161DCDCB6E00841DB1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BA6C151DCDCB6E00841DB1 /* AppDelegate.m */; };
-		19BA6C191DCDCB6E00841DB1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BA6C181DCDCB6E00841DB1 /* ViewController.m */; };
 		19BA6C1C1DCDCB6E00841DB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19BA6C1A1DCDCB6E00841DB1 /* Main.storyboard */; };
 		19BA6C1E1DCDCB6E00841DB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19BA6C1D1DCDCB6E00841DB1 /* Assets.xcassets */; };
 		19BA6C211DCDCB6E00841DB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19BA6C1F1DCDCB6E00841DB1 /* LaunchScreen.storyboard */; };
@@ -21,6 +20,7 @@
 		19BA6C4B1DCDF79D00841DB1 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 19BA6C4A1DCDF79D00841DB1 /* libxml2.tbd */; };
 		19BA6C4D1DCDF85200841DB1 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19BA6C4C1DCDF85200841DB1 /* CoreText.framework */; };
 		19BA6C4F1DCDFA1800841DB1 /* 09.csv in Resources */ = {isa = PBXBuildFile; fileRef = 19BA6C4E1DCDFA1800841DB1 /* 09.csv */; };
+		921A19E1D1F56B63A66A852C /* AttendanceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 921A121EAAB19198ED5F1530 /* AttendanceCell.m */; };
 		921A1A07128E5A2FE3E591FE /* AttendanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 921A153F4ACF3F67C287B628 /* AttendanceController.m */; };
 /* End PBXBuildFile section */
 
@@ -48,8 +48,6 @@
 		19BA6C121DCDCB6E00841DB1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		19BA6C141DCDCB6E00841DB1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		19BA6C151DCDCB6E00841DB1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		19BA6C171DCDCB6E00841DB1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		19BA6C181DCDCB6E00841DB1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		19BA6C1B1DCDCB6E00841DB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		19BA6C1D1DCDCB6E00841DB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19BA6C201DCDCB6E00841DB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,6 +63,8 @@
 		19BA6C4A1DCDF79D00841DB1 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		19BA6C4C1DCDF85200841DB1 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		19BA6C4E1DCDFA1800841DB1 /* 09.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 09.csv; sourceTree = "<group>"; };
+		921A1049ED92C0612E8CD0B5 /* AttendanceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttendanceCell.h; sourceTree = "<group>"; };
+		921A121EAAB19198ED5F1530 /* AttendanceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttendanceCell.m; sourceTree = "<group>"; };
 		921A153F4ACF3F67C287B628 /* AttendanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttendanceController.m; sourceTree = "<group>"; };
 		921A1A49F5886B06347905F0 /* AttendanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttendanceController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +112,8 @@
 			children = (
 				921A153F4ACF3F67C287B628 /* AttendanceController.m */,
 				921A1A49F5886B06347905F0 /* AttendanceController.h */,
+				921A121EAAB19198ED5F1530 /* AttendanceCell.m */,
+				921A1049ED92C0612E8CD0B5 /* AttendanceCell.h */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -153,8 +155,6 @@
 				19BA6C4E1DCDFA1800841DB1 /* 09.csv */,
 				19BA6C141DCDCB6E00841DB1 /* AppDelegate.h */,
 				19BA6C151DCDCB6E00841DB1 /* AppDelegate.m */,
-				19BA6C171DCDCB6E00841DB1 /* ViewController.h */,
-				19BA6C181DCDCB6E00841DB1 /* ViewController.m */,
 				19BA6C1A1DCDCB6E00841DB1 /* Main.storyboard */,
 				19BA6C1D1DCDCB6E00841DB1 /* Assets.xcassets */,
 				19BA6C1F1DCDCB6E00841DB1 /* LaunchScreen.storyboard */,
@@ -268,6 +268,7 @@
 				TargetAttributes = {
 					19BA6C0D1DCDCB6E00841DB1 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = R32GG63CFC;
 						ProvisioningStyle = Automatic;
 					};
 					19BA6C261DCDCB6E00841DB1 = {
@@ -336,10 +337,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				193346AC1DCE0C8500671C87 /* AttendanceModel.m in Sources */,
-				19BA6C191DCDCB6E00841DB1 /* ViewController.m in Sources */,
 				19BA6C161DCDCB6E00841DB1 /* AppDelegate.m in Sources */,
 				19BA6C131DCDCB6E00841DB1 /* main.m in Sources */,
 				921A1A07128E5A2FE3E591FE /* AttendanceController.m in Sources */,
+				921A19E1D1F56B63A66A852C /* AttendanceCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +489,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R32GG63CFC;
 				INFOPLIST_FILE = Attendance/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -500,6 +502,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R32GG63CFC;
 				INFOPLIST_FILE = Attendance/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
