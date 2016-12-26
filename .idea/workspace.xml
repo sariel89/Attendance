@@ -2,19 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="934de246-a41a-42b5-9676-e9aef9c32536" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Attendance/Classes/Controller/AttendanceCell.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Attendance/Classes/Controller/AttendanceCell.m" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Attendance/ViewController.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Attendance/ViewController.m" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Attendance/Assets.xcassets/AppIcon.appiconset/Rectangle120.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Attendance/Assets.xcassets/AppIcon.appiconset/Rectangle180.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Attendance/AFNetworking/AFHTTPSessionManager.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Attendance/AFNetworking/AFHTTPSessionManager.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Attendance/AFNetworking/AFNetworkReachabilityManager.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Attendance/AFNetworking/AFNetworkReachabilityManager.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Attendance/AFNetworking/AFNetworking.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Attendance/AFNetworking/AFSecurityPolicy.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Attendance/AFNetworking/AFSecurityPolicy.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Attendance/AFNetworking/AFURLRequestSerialization.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Attendance/AFNetworking/AFURLRequestSerialization.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Attendance/AFNetworking/AFURLResponseSerialization.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Attendance/AFNetworking/AFURLResponseSerialization.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Attendance/AFNetworking/AFURLSessionManager.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Attendance/AFNetworking/AFURLSessionManager.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Attendance/Classes/Handle/AttendanceLogDataHandle.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Attendance/Classes/Handle/AttendanceLogDataHandle.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Attendance/Classes/View/AttendanceCell.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Attendance/Classes/View/AttendanceCell.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Attendance/Classes/View/SarielDatePickerView.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Attendance/Classes/View/SarielDatePickerView.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Podfile" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Attendance/Classes/Controller/AttendanceCell.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Attendance/Classes/Controller/AttendanceCell.m" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Attendance.xcodeproj/project.xcworkspace/xcuserdata/sarielchen.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/Attendance.xcodeproj/project.xcworkspace/xcuserdata/sarielchen.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Attendance.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Attendance.xcodeproj/project.pbxproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Attendance.xcodeproj/xcuserdata/sarielchen.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterPath="$PROJECT_DIR$/Attendance.xcodeproj/xcuserdata/sarielchen.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Attendance/AppDelegate.m" afterPath="$PROJECT_DIR$/Attendance/AppDelegate.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Attendance.xcodeproj/xcuserdata/sarielchen.xcuserdatad/xcschemes/Attendance.xcscheme" afterPath="$PROJECT_DIR$/Attendance.xcodeproj/xcuserdata/sarielchen.xcuserdatad/xcschemes/Attendance.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Attendance/Assets.xcassets/AppIcon.appiconset/Contents.json" afterPath="$PROJECT_DIR$/Attendance/Assets.xcassets/AppIcon.appiconset/Contents.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Attendance/Base.lproj/Main.storyboard" afterPath="$PROJECT_DIR$/Attendance/Base.lproj/Main.storyboard" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Attendance/Classes/Controller/AttendanceController.m" afterPath="$PROJECT_DIR$/Attendance/Classes/Controller/AttendanceController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Attendance/Classes/Model/AttendanceModel.h" afterPath="$PROJECT_DIR$/Attendance/Classes/Model/AttendanceModel.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Attendance/Classes/Model/AttendanceModel.m" afterPath="$PROJECT_DIR$/Attendance/Classes/Model/AttendanceModel.m" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,14 +45,17 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulatoriPhone_5_10.1_i386_1" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos" />
+  <component name="FavoritesManager">
+    <favorites_list name="Attendance" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AttendanceController.m" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AttendanceController.m" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Attendance/Classes/Controller/AttendanceController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="19" column="60" lean-forward="true" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
+            <state relative-caret-position="140">
+              <caret line="119" column="28" lean-forward="false" selection-start-line="119" selection-start-column="28" selection-end-line="119" selection-end-column="28" />
               <folding>
                 <element signature="e#92#124#0" expanded="true" />
               </folding>
@@ -41,11 +63,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AttendanceModel.h" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Attendance/Classes/Model/AttendanceModel.h">
+      <file leaf-file-name="AttendanceLogDataHandle.m" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Attendance/Classes/Handle/AttendanceLogDataHandle.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AttendanceLogDataHandle.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Attendance/Classes/Handle/AttendanceLogDataHandle.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="49" lean-forward="true" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AttendanceController.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Attendance/Classes/Controller/AttendanceController.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -59,6 +101,10 @@
       <find>createUserRecordListWithOneRecord</find>
       <find>analyzeDailyRecords</find>
       <find>self.arrDatas</find>
+      <find>uicolor</find>
+      <find>dateFirstRecord</find>
+      <find>self.contentView</find>
+      <find>first</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -70,9 +116,12 @@
         <option value="$PROJECT_DIR$/Attendance/ViewController.m" />
         <option value="$PROJECT_DIR$/Attendance/Classes/Model/AttendanceModel.m" />
         <option value="$PROJECT_DIR$/Attendance/Classes/Controller/AttendanceCell.h" />
-        <option value="$PROJECT_DIR$/Attendance/Classes/Controller/AttendanceCell.m" />
-        <option value="$PROJECT_DIR$/Attendance/Classes/Controller/AttendanceController.m" />
         <option value="$PROJECT_DIR$/Attendance/Classes/Model/AttendanceModel.h" />
+        <option value="$PROJECT_DIR$/Attendance/Classes/Controller/AttendanceCell.m" />
+        <option value="$PROJECT_DIR$/Podfile" />
+        <option value="$PROJECT_DIR$/Attendance/Classes/Handle/AttendanceLogDataHandle.m" />
+        <option value="$PROJECT_DIR$/Attendance/Classes/Handle/AttendanceLogDataHandle.h" />
+        <option value="$PROJECT_DIR$/Attendance/Classes/Controller/AttendanceController.m" />
       </list>
     </option>
   </component>
@@ -86,6 +135,9 @@
     <option name="y" value="23" />
     <option name="width" value="1255" />
     <option name="height" value="777" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -145,8 +197,48 @@
               <option name="myItemId" value="Classes" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Attendance" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Attendance" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Classes" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Model" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Attendance" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Attendance" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Classes" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Handle" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -180,6 +272,7 @@
   <component name="PropertiesComponent">
     <property name="js.eslint.eslintPackage" value="" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="Attendance" />
+    <property name="settings.editor.selected.configurable" value="CocoaPods" />
   </component>
   <component name="RunManager" selected="Application.Attendance">
     <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Attendance" TARGET_NAME="Attendance" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Attendance" RUN_TARGET_NAME="Attendance" MAKE_ACTIVE="TRUE">
@@ -250,20 +343,23 @@
       <workItem from="1480146688044" duration="570000" />
       <workItem from="1480156579148" duration="2322000" />
       <workItem from="1480214113932" duration="13703000" />
+      <workItem from="1482547996562" duration="77000" />
+      <workItem from="1482548267888" duration="9000" />
+      <workItem from="1482548361960" duration="4099000" />
+      <workItem from="1482758300587" duration="2141000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20169000" />
+    <option name="totallyTimeSpent" value="26495000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1255" height="777" extended-state="0" />
+    <frame x="0" y="23" width="1255" height="777" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940239" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24940239" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32909605" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -273,27 +369,107 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997175" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32909605" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32909605" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
   </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="12" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Attendance/Classes/Controller/AttendanceController.m</url>
+          <line>122</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Attendance/Classes/Controller/AttendanceController.m</url>
+          <line>119</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Attendance/Classes/Controller/AttendanceController.m</url>
+          <line>118</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Attendance/Classes/Controller/AttendanceController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4800">
+          <caret line="320" column="47" lean-forward="false" selection-start-line="320" selection-start-column="47" selection-end-line="320" selection-end-column="47" />
+          <folding>
+            <element signature="e#92#124#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Attendance/Classes/Controller/AttendanceCell.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Attendance/Classes/Controller/AttendanceController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#92#124#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Attendance/Classes/Model/AttendanceModel.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Attendance/Classes/Controller/AttendanceController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="60" lean-forward="false" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
+          <folding>
+            <element signature="e#92#124#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Attendance/Classes/Model/AttendanceModel.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Attendance/Classes/Controller/AttendanceController.m">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -323,7 +499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -331,7 +506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -339,15 +513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="37" column="21" lean-forward="false" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Attendance/Classes/Controller/AttendanceCell.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-505">
-          <caret line="104" column="43" lean-forward="true" selection-start-line="104" selection-start-column="43" selection-end-line="104" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -355,9 +520,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-          <folding>
-            <element signature="e#92#115#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -365,25 +527,72 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="54" lean-forward="false" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Attendance/Classes/Model/AttendanceModel.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="24" column="40" lean-forward="false" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Attendance/Classes/Controller/AttendanceCell.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="57" column="48" lean-forward="false" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Podfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Attendance/Classes/Controller/AttendanceController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Attendance/Classes/Handle/AttendanceLogDataHandle.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="49" lean-forward="true" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSPathUtilities.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-40">
+          <caret line="59" column="49" lean-forward="false" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Attendance/Classes/Handle/AttendanceLogDataHandle.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Attendance/Classes/Controller/AttendanceController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="60" lean-forward="true" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
+        <state relative-caret-position="140">
+          <caret line="119" column="28" lean-forward="false" selection-start-line="119" selection-start-column="28" selection-end-line="119" selection-end-column="28" />
           <folding>
             <element signature="e#92#124#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Attendance/Classes/Model/AttendanceModel.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
