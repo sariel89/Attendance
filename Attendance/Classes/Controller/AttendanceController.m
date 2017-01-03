@@ -9,6 +9,7 @@
 #import "AttendanceLogDataHandle.h"
 #import "SarielDatePickerView.h"
 #import "AFNetworking.h"
+#import "HUD.h"
 
 @interface AttendanceController () <UITableViewDelegate, UITableViewDataSource>
 @property(weak, nonatomic) IBOutlet UILabel *labTime;
@@ -53,6 +54,8 @@
 
 
 }
+
+#pragma mark - UI
 
 #pragma mark - UITableviewDelegate, UITabelviewDatasource
 
@@ -109,35 +112,72 @@
 - (IBAction)actionDownFile:(id)sender {
     NSLog(@"下载文件");
 
-    NSString *strURL = [NSString stringWithFormat:@"http://oisdy8krb.bkt.clouddn.com/%@.csv?%f", self.labTime.text, [[NSDate date] timeIntervalSince1970]];
+    NSString *fileName = [NSString stringWithFormat:@"%@.csv", self.labTime.text];
+    NSString *strURL = [NSString stringWithFormat:@"http://oisdy8krb.bkt.clouddn.com/%@?%f", fileName, [[NSDate date] timeIntervalSince1970]];
 
+    // 判断文件是否已经存在
+    NSString *documentPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
+    NSString *strFilePath = [documentPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.csv", self.labTime.text]];
+    NSLog(@"file path : %@", strFilePath);
+    if ([[NSFileManager defaultManager] fileExistsAtPath:strFilePath]) {
+        // file is executable
+        [self.arrDatas removeAllObjects];
+        self.arrDatas = [self.dataHandle beginReadFileAndHandle:strFilePath];
+        [self.tableResult reloadData];
+        return;
+    }
+
+// 开始下载文件
+    [HUD showHUD];
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:strURL]];
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     [[manager downloadTaskWithRequest:request progress:nil destination:^NSURL *(NSURL *targetPath, NSURLResponse *response) {
-        NSString *documentPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
-        NSString *strFileName = [documentPath stringByAppendingPathComponent:response.suggestedFilename];
-        NSLog(@"file name : %@", strFileName);
-        return [NSURL fileURLWithPath:strFileName];
+        return [NSURL fileURLWithPath:strFilePath];
+
     }               completionHandler:^(NSURLResponse *response, NSURL *filePath, NSError *error) {
+        [HUD hiddenHUD];
+
         if (!error) {
             [self.arrDatas removeAllObjects];
             self.arrDatas = [self.dataHandle beginReadFileAndHandle:filePath];
             [self.tableResult reloadData];
 
         } else {
-            //TODO: show error message.
-
+            [HUD toast:error.localizedDescription];
+            [[NSFileManager defaultManager] removeItemAtURL:filePath error:nil];
         }
+
     }] resume];
 
 }
 
 - (IBAction)actionClearCache:(id)sender {
     NSLog(@"清除缓存文件");
+    NSFileManager *manager = [NSFileManager defaultManager];
+    NSString *documentPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
+    NSArray *files = [manager contentsOfDirectoryAtPath:documentPath error:nil];
+    NSEnumerator *e = [files objectEnumerator];
+    NSString *fileName;
+    while (fileName = [e nextObject]) {
+        if ([[fileName pathExtension] isEqualToString:@"csv"]) {
+            [manager removeItemAtPath:[documentPath stringByAppendingPathComponent:fileName] error:nil];
+        }
+    }
 }
 
 - (IBAction)actionUploadFile:(id)sender {
     NSLog(@"上传文件");
+}
+
+- (IBAction)tapFiltrateBtn:(id)sender {
+    if (0 == self.arrDatas.count) {
+        // 没有数据，
+        return;
+    }
+
+    //TODO: 有数据，展示筛选层
+
+
 }
 
 #pragma mark - Method

@@ -29,6 +29,8 @@
 		19BA6C4B1DCDF79D00841DB1 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 19BA6C4A1DCDF79D00841DB1 /* libxml2.tbd */; };
 		19BA6C4D1DCDF85200841DB1 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19BA6C4C1DCDF85200841DB1 /* CoreText.framework */; };
 		19BA6C4F1DCDFA1800841DB1 /* 09.csv in Resources */ = {isa = PBXBuildFile; fileRef = 19BA6C4E1DCDFA1800841DB1 /* 09.csv */; };
+		921A13E9B897AD314DADBBB7 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 921A1F5DEC6492D97A40B61F /* MBProgressHUD.m */; };
+		921A186AC55D7D7241907B9C /* HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 921A199B722C0730211B7C68 /* HUD.m */; };
 		921A1A07128E5A2FE3E591FE /* AttendanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 921A153F4ACF3F67C287B628 /* AttendanceController.m */; };
 /* End PBXBuildFile section */
 
@@ -91,7 +93,11 @@
 		19BA6C4C1DCDF85200841DB1 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		19BA6C4E1DCDFA1800841DB1 /* 09.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 09.csv; sourceTree = "<group>"; };
 		921A153F4ACF3F67C287B628 /* AttendanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttendanceController.m; sourceTree = "<group>"; };
+		921A15B745319425E6FB573E /* HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUD.h; sourceTree = "<group>"; };
+		921A18A1ABC6E507A552A07D /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		921A199B722C0730211B7C68 /* HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUD.m; sourceTree = "<group>"; };
 		921A1A49F5886B06347905F0 /* AttendanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttendanceController.h; sourceTree = "<group>"; };
+		921A1F5DEC6492D97A40B61F /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +232,7 @@
 				19BA6C1F1DCDCB6E00841DB1 /* LaunchScreen.storyboard */,
 				19BA6C221DCDCB6E00841DB1 /* Info.plist */,
 				19BA6C111DCDCB6E00841DB1 /* Supporting Files */,
+				921A1B66DEE1B365ED3EB808 /* MBProgressHUD */,
 			);
 			path = Attendance;
 			sourceTree = "<group>";
@@ -265,6 +272,17 @@
 				19BA6C461DCDF78F00841DB1 /* CFNetwork.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		921A1B66DEE1B365ED3EB808 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				921A18A1ABC6E507A552A07D /* MBProgressHUD.h */,
+				921A1F5DEC6492D97A40B61F /* MBProgressHUD.m */,
+				921A199B722C0730211B7C68 /* HUD.m */,
+				921A15B745319425E6FB573E /* HUD.h */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,6 +433,8 @@
 				19386CFA1E1162F8006F21E8 /* AFURLResponseSerialization.m in Sources */,
 				19386CFB1E1162F8006F21E8 /* AFURLSessionManager.m in Sources */,
 				19386CF61E1162F8006F21E8 /* AFHTTPSessionManager.m in Sources */,
+				921A13E9B897AD314DADBBB7 /* MBProgressHUD.m in Sources */,
+				921A186AC55D7D7241907B9C /* HUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
