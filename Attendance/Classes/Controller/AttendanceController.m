@@ -10,6 +10,7 @@
 #import "SarielDatePickerView.h"
 #import "AFNetworking.h"
 #import "HUD.h"
+#import "AttendanceFilterView.h"
 
 @interface AttendanceController () <UITableViewDelegate, UITableViewDataSource>
 @property(weak, nonatomic) IBOutlet UILabel *labTime;
@@ -17,6 +18,8 @@
 @property(weak, nonatomic) IBOutlet UITableView *tableResult;
 @property(weak, nonatomic) IBOutlet UIButton *btnClearCache;
 @property(weak, nonatomic) IBOutlet UIButton *btnUpload;
+
+@property (nonatomic, strong) AttendanceFilterView *viewFilter;
 
 @property(nonatomic, strong) NSMutableArray<AttendanceUserModel *> *arrDatas;
 
@@ -135,14 +138,15 @@
         return [NSURL fileURLWithPath:strFilePath];
 
     }               completionHandler:^(NSURLResponse *response, NSURL *filePath, NSError *error) {
-        [HUD hiddenHUD];
-
+        
         if (!error) {
             [self.arrDatas removeAllObjects];
             self.arrDatas = [self.dataHandle beginReadFileAndHandle:filePath];
             [self.tableResult reloadData];
+            [HUD hiddenHUD];
 
         } else {
+            [HUD hiddenHUD];
             [HUD toast:error.localizedDescription];
             [[NSFileManager defaultManager] removeItemAtURL:filePath error:nil];
         }
@@ -175,9 +179,12 @@
         return;
     }
 
-    //TODO: 有数据，展示筛选层
-
-
+// 显示筛选层，组装数据
+    NSMutableArray *arr = [[NSMutableArray alloc] init];
+    for (int i = 0; i < self.arrDatas.count; ++i) {
+        [arr addObject:self.arrDatas[i].userName];
+    }
+    [self.viewFilter showFilterWithNames:arr];
 }
 
 #pragma mark - Method
@@ -215,6 +222,17 @@
         }];
     }
     return _viewPicker;
+}
+
+- (AttendanceFilterView *)viewFilter {
+    if (!_viewFilter) {
+        _viewFilter = [[AttendanceFilterView alloc] init];
+        [_viewFilter setTapDoneItemBlock:^(NSString *filterInfo) {
+            //TODO: 处理筛选信息
+
+        }];
+    }
+    return _viewFilter;
 }
 
 @end

@@ -24,6 +24,7 @@
     self = [super init];
     if (self) {
         self.hidden = YES;
+        self.backgroundColor = [UIColor whiteColor];
         self.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width, 256);
         self.toolBar.hidden = NO;
     }
