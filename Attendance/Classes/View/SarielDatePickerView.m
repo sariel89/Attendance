@@ -184,7 +184,7 @@
         NSMutableArray *arrYear = [[NSMutableArray alloc] init];
         NSInteger nowYear = [[NSCalendar calendarWithIdentifier:NSCalendarIdentifierGregorian] component:NSCalendarUnitYear fromDate:[NSDate date]];
         
-        for (NSInteger i = nowYear - 10; i < nowYear + 10; i ++) {
+        for (NSInteger i = nowYear - 2; i < nowYear + 2; i ++) {
             [arrYear addObject:[NSString stringWithFormat:@"%ld", (long)i]];
         }
         

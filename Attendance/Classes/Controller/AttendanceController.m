@@ -21,9 +21,9 @@
 
 @property (nonatomic, strong) AttendanceFilterView *viewFilter;
 
-@property(nonatomic, strong) NSMutableArray<AttendanceUserModel *> *arrDatas;
+@property(nonatomic, strong) NSArray<AttendanceUserModel *> *arrDatas;
 
-@property(nonatomic, strong) NSArray<AttendanceUserModel *> *arrTableDatas;
+@property(nonatomic, strong) NSArray<AttendanceUserModel *> *arrTableDefaultDatas;
 
 @property(nonatomic, strong) AttendanceLogDataHandle *dataHandle;
 @property(nonatomic, strong) SarielDatePickerView *viewPicker;
@@ -124,8 +124,8 @@
     NSLog(@"file path : %@", strFilePath);
     if ([[NSFileManager defaultManager] fileExistsAtPath:strFilePath]) {
         // file is executable
-        [self.arrDatas removeAllObjects];
-        self.arrDatas = [self.dataHandle beginReadFileAndHandle:strFilePath];
+        self.arrTableDefaultDatas = [self.dataHandle beginReadFileAndHandle:strFilePath];
+        self.arrDatas = [[NSArray alloc] initWithArray:self.arrTableDefaultDatas];
         [self.tableResult reloadData];
         return;
     }
@@ -140,8 +140,8 @@
     }               completionHandler:^(NSURLResponse *response, NSURL *filePath, NSError *error) {
         
         if (!error) {
-            [self.arrDatas removeAllObjects];
-            self.arrDatas = [self.dataHandle beginReadFileAndHandle:filePath];
+            self.arrTableDefaultDatas = [self.dataHandle beginReadFileAndHandle:filePath];
+            self.arrDatas = [[NSArray alloc] initWithArray:self.arrTableDefaultDatas];
             [self.tableResult reloadData];
             [HUD hiddenHUD];
 
@@ -181,10 +181,47 @@
 
 // 显示筛选层，组装数据
     NSMutableArray *arr = [[NSMutableArray alloc] init];
-    for (int i = 0; i < self.arrDatas.count; ++i) {
-        [arr addObject:self.arrDatas[i].userName];
+    for (int i = 0; i < self.arrTableDefaultDatas.count; ++i) {
+        [arr addObject:self.arrTableDefaultDatas[i].userName];
     }
     [self.viewFilter showFilterWithNames:arr];
+}
+
+- (void) handleDataWithFilter:(NSString *)filterInfo {
+    NSArray *arr = [filterInfo componentsSeparatedByString:@"|"];
+    if (2 == arr.count) {
+        // 符合条件 - 开始解析
+        NSArray *arrFilter = [[NSArray alloc] initWithArray:self.arrTableDefaultDatas];
+        // 解析名称
+        if (![@"0" isEqualToString:arr[0]]) {
+            // 解析名称
+            if (arrFilter.count > [arr[0] intValue]) {
+                arrFilter = @[arrFilter[[arr[0] intValue] - 1]];
+            }
+        }
+
+        // 解析日期
+        if (![arr[1] isEqualToString:@"0"]) {
+            int selectedDay = [arr[1] intValue];
+
+            for (int i = 0; i < arrFilter.count; ++i) {
+                AttendanceUserModel *userModel = arrFilter[i];
+
+                for (int j = 0; j < userModel.userAttendanceDates.count; ++j) {
+                    AttendanceModel *model = userModel.userAttendanceDates[j];
+                    if (model.dateComp.day == selectedDay) {
+                        // 选中的日期
+                        userModel.userAttendanceDates = @[model];
+                        break;
+                    }
+                }
+            }
+
+        }
+
+        self.arrDatas = arrFilter;
+        [self.tableResult reloadData];
+    }
 }
 
 #pragma mark - Method
@@ -192,18 +229,24 @@
 
 #pragma mark - Getter
 
-- (NSMutableArray<AttendanceUserModel *> *)arrDatas {
+- (NSArray<AttendanceUserModel *> *)arrDatas {
     if (!_arrDatas) {
-        _arrDatas = [[NSMutableArray alloc] init];
+        _arrDatas =@[];
     }
     return _arrDatas;
 }
 
-- (NSArray<AttendanceUserModel *> *)arrTableDatas {
-    if (!_arrTableDatas) {
-        _arrTableDatas = [[NSArray alloc] init];
+- (NSArray<AttendanceUserModel *> *)arrTableDefaultDatas {
+    if (!_arrTableDefaultDatas) {
+        _arrTableDefaultDatas = @[];
     }
-    return _arrTableDatas;
+    return _arrTableDefaultDatas;
+}
+
+- (void) setValueToDefaultDatas:(NSArray *)arr {
+    if (arr) {
+        _arrTableDefaultDatas = arr;
+    }
 }
 
 - (AttendanceLogDataHandle *)dataHandle {
@@ -228,8 +271,8 @@
     if (!_viewFilter) {
         _viewFilter = [[AttendanceFilterView alloc] init];
         [_viewFilter setTapDoneItemBlock:^(NSString *filterInfo) {
-            //TODO: 处理筛选信息
-
+            //TODO: 处理筛选信息  | 间隔
+            [self handleDataWithFilter:filterInfo];
         }];
     }
     return _viewFilter;

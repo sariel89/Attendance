@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04107A981EDA7373006DB541 /* DateTools.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04107A881EDA7373006DB541 /* DateTools.bundle */; };
+		04107A991EDA7373006DB541 /* DTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 04107A8B1EDA7373006DB541 /* DTConstants.m */; };
+		04107A9A1EDA7373006DB541 /* DTError.m in Sources */ = {isa = PBXBuildFile; fileRef = 04107A8D1EDA7373006DB541 /* DTError.m */; };
+		04107A9B1EDA7373006DB541 /* DTTimePeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 04107A8F1EDA7373006DB541 /* DTTimePeriod.m */; };
+		04107A9C1EDA7373006DB541 /* DTTimePeriodChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 04107A911EDA7373006DB541 /* DTTimePeriodChain.m */; };
+		04107A9D1EDA7373006DB541 /* DTTimePeriodCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 04107A931EDA7373006DB541 /* DTTimePeriodCollection.m */; };
+		04107A9E1EDA7373006DB541 /* DTTimePeriodGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 04107A951EDA7373006DB541 /* DTTimePeriodGroup.m */; };
+		04107A9F1EDA7373006DB541 /* NSDate+DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 04107A971EDA7373006DB541 /* NSDate+DateTools.m */; };
 		193346AC1DCE0C8500671C87 /* AttendanceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 193346AB1DCE0C8500671C87 /* AttendanceModel.m */; };
 		19386CCC1E115071006F21E8 /* AttendanceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19386CCB1E115071006F21E8 /* AttendanceCell.m */; };
 		19386CD01E1150AA006F21E8 /* AttendanceLogDataHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 19386CCF1E1150AA006F21E8 /* AttendanceLogDataHandle.m */; };
@@ -33,6 +41,7 @@
 		921A186AC55D7D7241907B9C /* HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 921A199B722C0730211B7C68 /* HUD.m */; };
 		921A1967BF121CD74DADA33F /* AttendanceFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 921A10DC456B018386DF6629 /* AttendanceFilterView.m */; };
 		921A1A07128E5A2FE3E591FE /* AttendanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 921A153F4ACF3F67C287B628 /* AttendanceController.m */; };
+		C9C9AA2784E024E70284C500 /* YAAttendanceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C9A1C18B7E72EB80E67DE0 /* YAAttendanceModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +62,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04107A881EDA7373006DB541 /* DateTools.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DateTools.bundle; sourceTree = "<group>"; };
+		04107A891EDA7373006DB541 /* DateTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTools.h; sourceTree = "<group>"; };
+		04107A8A1EDA7373006DB541 /* DTConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTConstants.h; sourceTree = "<group>"; };
+		04107A8B1EDA7373006DB541 /* DTConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTConstants.m; sourceTree = "<group>"; };
+		04107A8C1EDA7373006DB541 /* DTError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTError.h; sourceTree = "<group>"; };
+		04107A8D1EDA7373006DB541 /* DTError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTError.m; sourceTree = "<group>"; };
+		04107A8E1EDA7373006DB541 /* DTTimePeriod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTTimePeriod.h; sourceTree = "<group>"; };
+		04107A8F1EDA7373006DB541 /* DTTimePeriod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriod.m; sourceTree = "<group>"; };
+		04107A901EDA7373006DB541 /* DTTimePeriodChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTTimePeriodChain.h; sourceTree = "<group>"; };
+		04107A911EDA7373006DB541 /* DTTimePeriodChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriodChain.m; sourceTree = "<group>"; };
+		04107A921EDA7373006DB541 /* DTTimePeriodCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTTimePeriodCollection.h; sourceTree = "<group>"; };
+		04107A931EDA7373006DB541 /* DTTimePeriodCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriodCollection.m; sourceTree = "<group>"; };
+		04107A941EDA7373006DB541 /* DTTimePeriodGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTTimePeriodGroup.h; sourceTree = "<group>"; };
+		04107A951EDA7373006DB541 /* DTTimePeriodGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriodGroup.m; sourceTree = "<group>"; };
+		04107A961EDA7373006DB541 /* NSDate+DateTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DateTools.h"; sourceTree = "<group>"; };
+		04107A971EDA7373006DB541 /* NSDate+DateTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DateTools.m"; sourceTree = "<group>"; };
 		193346AA1DCE0C8500671C87 /* AttendanceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttendanceModel.h; sourceTree = "<group>"; };
 		193346AB1DCE0C8500671C87 /* AttendanceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttendanceModel.m; sourceTree = "<group>"; };
 		19386CCA1E115071006F21E8 /* AttendanceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttendanceCell.h; sourceTree = "<group>"; };
@@ -101,6 +126,8 @@
 		921A199B722C0730211B7C68 /* HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUD.m; sourceTree = "<group>"; };
 		921A1A49F5886B06347905F0 /* AttendanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttendanceController.h; sourceTree = "<group>"; };
 		921A1F5DEC6492D97A40B61F /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		C9C9A1C18B7E72EB80E67DE0 /* YAAttendanceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAAttendanceModel.m; sourceTree = "<group>"; };
+		C9C9ABA3AB1037E292B62725 /* YAAttendanceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAAttendanceModel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +159,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04107A871EDA7373006DB541 /* DateTools */ = {
+			isa = PBXGroup;
+			children = (
+				04107A881EDA7373006DB541 /* DateTools.bundle */,
+				04107A891EDA7373006DB541 /* DateTools.h */,
+				04107A8A1EDA7373006DB541 /* DTConstants.h */,
+				04107A8B1EDA7373006DB541 /* DTConstants.m */,
+				04107A8C1EDA7373006DB541 /* DTError.h */,
+				04107A8D1EDA7373006DB541 /* DTError.m */,
+				04107A8E1EDA7373006DB541 /* DTTimePeriod.h */,
+				04107A8F1EDA7373006DB541 /* DTTimePeriod.m */,
+				04107A901EDA7373006DB541 /* DTTimePeriodChain.h */,
+				04107A911EDA7373006DB541 /* DTTimePeriodChain.m */,
+				04107A921EDA7373006DB541 /* DTTimePeriodCollection.h */,
+				04107A931EDA7373006DB541 /* DTTimePeriodCollection.m */,
+				04107A941EDA7373006DB541 /* DTTimePeriodGroup.h */,
+				04107A951EDA7373006DB541 /* DTTimePeriodGroup.m */,
+				04107A961EDA7373006DB541 /* NSDate+DateTools.h */,
+				04107A971EDA7373006DB541 /* NSDate+DateTools.m */,
+			);
+			path = DateTools;
+			sourceTree = "<group>";
+		};
 		193346A71DCE0C7200671C87 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +207,8 @@
 			children = (
 				193346AA1DCE0C8500671C87 /* AttendanceModel.h */,
 				193346AB1DCE0C8500671C87 /* AttendanceModel.m */,
+				C9C9A1C18B7E72EB80E67DE0 /* YAAttendanceModel.m */,
+				C9C9ABA3AB1037E292B62725 /* YAAttendanceModel.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -227,6 +279,7 @@
 		19BA6C101DCDCB6E00841DB1 /* Attendance */ = {
 			isa = PBXGroup;
 			children = (
+				04107A871EDA7373006DB541 /* DateTools */,
 				19386CE81E1162F8006F21E8 /* AFNetworking */,
 				193346A71DCE0C7200671C87 /* Classes */,
 				19BA6C4E1DCDFA1800841DB1 /* 09.csv */,
@@ -401,6 +454,7 @@
 				19BA6C4F1DCDFA1800841DB1 /* 09.csv in Resources */,
 				19BA6C1E1DCDCB6E00841DB1 /* Assets.xcassets in Resources */,
 				19BA6C1C1DCDCB6E00841DB1 /* Main.storyboard in Resources */,
+				04107A981EDA7373006DB541 /* DateTools.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +483,7 @@
 				19386CF71E1162F8006F21E8 /* AFNetworkReachabilityManager.m in Sources */,
 				19BA6C161DCDCB6E00841DB1 /* AppDelegate.m in Sources */,
 				19BA6C131DCDCB6E00841DB1 /* main.m in Sources */,
+				04107A9C1EDA7373006DB541 /* DTTimePeriodChain.m in Sources */,
 				921A1A07128E5A2FE3E591FE /* AttendanceController.m in Sources */,
 				19386CD31E115123006F21E8 /* SarielDatePickerView.m in Sources */,
 				19386CF81E1162F8006F21E8 /* AFSecurityPolicy.m in Sources */,
@@ -436,11 +491,18 @@
 				19386CCC1E115071006F21E8 /* AttendanceCell.m in Sources */,
 				19386CD01E1150AA006F21E8 /* AttendanceLogDataHandle.m in Sources */,
 				19386CFA1E1162F8006F21E8 /* AFURLResponseSerialization.m in Sources */,
+				04107A9E1EDA7373006DB541 /* DTTimePeriodGroup.m in Sources */,
+				04107A991EDA7373006DB541 /* DTConstants.m in Sources */,
 				19386CFB1E1162F8006F21E8 /* AFURLSessionManager.m in Sources */,
+				04107A9A1EDA7373006DB541 /* DTError.m in Sources */,
 				19386CF61E1162F8006F21E8 /* AFHTTPSessionManager.m in Sources */,
+				04107A9B1EDA7373006DB541 /* DTTimePeriod.m in Sources */,
 				921A13E9B897AD314DADBBB7 /* MBProgressHUD.m in Sources */,
 				921A186AC55D7D7241907B9C /* HUD.m in Sources */,
+				04107A9D1EDA7373006DB541 /* DTTimePeriodCollection.m in Sources */,
 				921A1967BF121CD74DADA33F /* AttendanceFilterView.m in Sources */,
+				04107A9F1EDA7373006DB541 /* NSDate+DateTools.m in Sources */,
+				C9C9AA2784E024E70284C500 /* YAAttendanceModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
