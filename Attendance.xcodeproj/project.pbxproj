@@ -15,6 +15,8 @@
 		04107A9D1EDA7373006DB541 /* DTTimePeriodCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 04107A931EDA7373006DB541 /* DTTimePeriodCollection.m */; };
 		04107A9E1EDA7373006DB541 /* DTTimePeriodGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 04107A951EDA7373006DB541 /* DTTimePeriodGroup.m */; };
 		04107A9F1EDA7373006DB541 /* NSDate+DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 04107A971EDA7373006DB541 /* NSDate+DateTools.m */; };
+		04107AA71EDA73EC006DB541 /* NameListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04107AA61EDA73EC006DB541 /* NameListViewController.m */; };
+		04107AAA1EDA7E2B006DB541 /* NameListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04107AA91EDA7E2B006DB541 /* NameListCell.m */; };
 		193346AC1DCE0C8500671C87 /* AttendanceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 193346AB1DCE0C8500671C87 /* AttendanceModel.m */; };
 		19386CCC1E115071006F21E8 /* AttendanceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19386CCB1E115071006F21E8 /* AttendanceCell.m */; };
 		19386CD01E1150AA006F21E8 /* AttendanceLogDataHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 19386CCF1E1150AA006F21E8 /* AttendanceLogDataHandle.m */; };
@@ -42,6 +44,7 @@
 		921A1967BF121CD74DADA33F /* AttendanceFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 921A10DC456B018386DF6629 /* AttendanceFilterView.m */; };
 		921A1A07128E5A2FE3E591FE /* AttendanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 921A153F4ACF3F67C287B628 /* AttendanceController.m */; };
 		C9C9AA2784E024E70284C500 /* YAAttendanceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C9A1C18B7E72EB80E67DE0 /* YAAttendanceModel.m */; };
+		D12DD421755B63210469916C /* Pods_Attendance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB4E849D4FA17A87EA6398A /* Pods_Attendance.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,10 @@
 		04107A951EDA7373006DB541 /* DTTimePeriodGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriodGroup.m; sourceTree = "<group>"; };
 		04107A961EDA7373006DB541 /* NSDate+DateTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DateTools.h"; sourceTree = "<group>"; };
 		04107A971EDA7373006DB541 /* NSDate+DateTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DateTools.m"; sourceTree = "<group>"; };
+		04107AA51EDA73EC006DB541 /* NameListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameListViewController.h; sourceTree = "<group>"; };
+		04107AA61EDA73EC006DB541 /* NameListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameListViewController.m; sourceTree = "<group>"; };
+		04107AA81EDA7E2B006DB541 /* NameListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameListCell.h; sourceTree = "<group>"; };
+		04107AA91EDA7E2B006DB541 /* NameListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameListCell.m; sourceTree = "<group>"; };
 		193346AA1DCE0C8500671C87 /* AttendanceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttendanceModel.h; sourceTree = "<group>"; };
 		193346AB1DCE0C8500671C87 /* AttendanceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttendanceModel.m; sourceTree = "<group>"; };
 		19386CCA1E115071006F21E8 /* AttendanceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttendanceCell.h; sourceTree = "<group>"; };
@@ -118,6 +125,7 @@
 		19BA6C4A1DCDF79D00841DB1 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		19BA6C4C1DCDF85200841DB1 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		19BA6C4E1DCDFA1800841DB1 /* 09.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 09.csv; sourceTree = "<group>"; };
+		6BB4E849D4FA17A87EA6398A /* Pods_Attendance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Attendance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		921A10DC456B018386DF6629 /* AttendanceFilterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttendanceFilterView.m; sourceTree = "<group>"; };
 		921A11BC24D4A4960C2E3F3C /* AttendanceFilterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttendanceFilterView.h; sourceTree = "<group>"; };
 		921A153F4ACF3F67C287B628 /* AttendanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttendanceController.m; sourceTree = "<group>"; };
@@ -126,6 +134,8 @@
 		921A199B722C0730211B7C68 /* HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUD.m; sourceTree = "<group>"; };
 		921A1A49F5886B06347905F0 /* AttendanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttendanceController.h; sourceTree = "<group>"; };
 		921A1F5DEC6492D97A40B61F /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		A17A4E95D0A309AA5F52DF10 /* Pods-Attendance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attendance.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Attendance/Pods-Attendance.debug.xcconfig"; sourceTree = "<group>"; };
+		B957AB76D96CB8341E8F95A5 /* Pods-Attendance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attendance.release.xcconfig"; path = "Pods/Target Support Files/Pods-Attendance/Pods-Attendance.release.xcconfig"; sourceTree = "<group>"; };
 		C9C9A1C18B7E72EB80E67DE0 /* YAAttendanceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAAttendanceModel.m; sourceTree = "<group>"; };
 		C9C9ABA3AB1037E292B62725 /* YAAttendanceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAAttendanceModel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +149,7 @@
 				19BA6C4B1DCDF79D00841DB1 /* libxml2.tbd in Frameworks */,
 				19BA6C491DCDF79500841DB1 /* JavaScriptCore.framework in Frameworks */,
 				19BA6C471DCDF78F00841DB1 /* CFNetwork.framework in Frameworks */,
+				D12DD421755B63210469916C /* Pods_Attendance.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,9 +193,29 @@
 			path = DateTools;
 			sourceTree = "<group>";
 		};
+		04107AA31EDA73EC006DB541 /* DateList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DateList;
+			sourceTree = "<group>";
+		};
+		04107AA41EDA73EC006DB541 /* NameList */ = {
+			isa = PBXGroup;
+			children = (
+				04107AA51EDA73EC006DB541 /* NameListViewController.h */,
+				04107AA61EDA73EC006DB541 /* NameListViewController.m */,
+				04107AA81EDA7E2B006DB541 /* NameListCell.h */,
+				04107AA91EDA7E2B006DB541 /* NameListCell.m */,
+			);
+			path = NameList;
+			sourceTree = "<group>";
+		};
 		193346A71DCE0C7200671C87 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				04107AA31EDA73EC006DB541 /* DateList */,
+				04107AA41EDA73EC006DB541 /* NameList */,
 				19386CCD1E115075006F21E8 /* Handle */,
 				19386CC91E115071006F21E8 /* View */,
 				193346A81DCE0C7200671C87 /* Controller */,
@@ -263,6 +294,7 @@
 				19BA6C351DCDCB6E00841DB1 /* AttendanceUITests */,
 				19BA6C0F1DCDCB6E00841DB1 /* Products */,
 				19BA6C451DCDF78F00841DB1 /* Frameworks */,
+				31BAC84B113E2E324784FFAF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -328,8 +360,18 @@
 				19BA6C4A1DCDF79D00841DB1 /* libxml2.tbd */,
 				19BA6C481DCDF79500841DB1 /* JavaScriptCore.framework */,
 				19BA6C461DCDF78F00841DB1 /* CFNetwork.framework */,
+				6BB4E849D4FA17A87EA6398A /* Pods_Attendance.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		31BAC84B113E2E324784FFAF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A17A4E95D0A309AA5F52DF10 /* Pods-Attendance.debug.xcconfig */,
+				B957AB76D96CB8341E8F95A5 /* Pods-Attendance.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		921A1B66DEE1B365ED3EB808 /* MBProgressHUD */ = {
@@ -350,9 +392,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19BA6C3B1DCDCB6E00841DB1 /* Build configuration list for PBXNativeTarget "Attendance" */;
 			buildPhases = (
+				1D2C55433087AAA92C5E7B7F /* [CP] Check Pods Manifest.lock */,
 				19BA6C0A1DCDCB6E00841DB1 /* Sources */,
 				19BA6C0B1DCDCB6E00841DB1 /* Frameworks */,
 				19BA6C0C1DCDCB6E00841DB1 /* Resources */,
+				E241A91C9A9DEFC0397D4055 /* [CP] Embed Pods Frameworks */,
+				65D1023D26157A5402F55975 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -474,6 +519,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D2C55433087AAA92C5E7B7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		65D1023D26157A5402F55975 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Attendance/Pods-Attendance-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E241A91C9A9DEFC0397D4055 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Attendance/Pods-Attendance-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		19BA6C0A1DCDCB6E00841DB1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -498,8 +591,10 @@
 				19386CF61E1162F8006F21E8 /* AFHTTPSessionManager.m in Sources */,
 				04107A9B1EDA7373006DB541 /* DTTimePeriod.m in Sources */,
 				921A13E9B897AD314DADBBB7 /* MBProgressHUD.m in Sources */,
+				04107AA71EDA73EC006DB541 /* NameListViewController.m in Sources */,
 				921A186AC55D7D7241907B9C /* HUD.m in Sources */,
 				04107A9D1EDA7373006DB541 /* DTTimePeriodCollection.m in Sources */,
+				04107AAA1EDA7E2B006DB541 /* NameListCell.m in Sources */,
 				921A1967BF121CD74DADA33F /* AttendanceFilterView.m in Sources */,
 				04107A9F1EDA7373006DB541 /* NSDate+DateTools.m in Sources */,
 				C9C9AA2784E024E70284C500 /* YAAttendanceModel.m in Sources */,
@@ -651,6 +746,7 @@
 		};
 		19BA6C3C1DCDCB6E00841DB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A17A4E95D0A309AA5F52DF10 /* Pods-Attendance.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -665,6 +761,7 @@
 		};
 		19BA6C3D1DCDCB6E00841DB1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B957AB76D96CB8341E8F95A5 /* Pods-Attendance.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
